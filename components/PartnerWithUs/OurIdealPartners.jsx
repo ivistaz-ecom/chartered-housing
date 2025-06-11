@@ -1,5 +1,4 @@
 import { ourIdealPartners } from "@/lib/constants/OurIdealPartners"
-import React from "react"
 
 const OurIdealPartners = () => {
   return (

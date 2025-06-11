@@ -1,21 +1,24 @@
+import BecauseAtChartered from "@/components/About/BecauseAtChartered"
+import ButOurStory from "@/components/About/ButOurStory"
 import HeroSection from "@/components/HeroSection/HeroSection"
-import React from "react"
 
 export default function page() {
   const heroSectionData = {
     heading: {
-      year: 35,
-      firstLine: "Years of Building a Legacy of",
-      secondLine: "Quality through Transparency",
+      year: "",
+      firstLine: "A Legacy of Trust",
+      secondLine: "A Future Built with Purpose",
       thirdLine: "",
     },
     imageUrl: "/banner/about-banner.png",
-    desc: "For over thirty five years, we’ve been building more than just homes; we’ve been creating a legacy of quality and trust. Our journey has been one of commitment to excellence and being open with our customers every step of the way.",
+    desc: "At Chartered Housing, our story is deeply rooted in Bengaluru — a city that has evolved from quiet gardens to a global innovation hub. Over the last three decades, we’ve grown with the city, responding to its shifting skylines and expanding aspirations with spaces that endure.",
   }
 
   return (
     <>
       <HeroSection data={heroSectionData} />
+      <ButOurStory />
+      <BecauseAtChartered />
     </>
   )
 }

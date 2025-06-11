@@ -14,13 +14,24 @@ const Footer = () => {
             <div className="flex gap-3 items-center">
               <p>
                 <strong>Reach Us:</strong>{" "}
-                <a className="font-light">+91 990 059 2343</a>/
-                <a className="font-light">+91 990 059 2343</a>
+                <a
+                  href="tel:+919900592343"
+                  className="font-light hover:text-[#ec1d23]"
+                >
+                  +91 990 059 2343
+                </a>{" "}
+                /{" "}
+                <a
+                  href="tel:+918031021400"
+                  className="font-light hover:text-[#ec1d23]"
+                >
+                  +91 803 102 1400
+                </a>
               </p>
               <span className="text-2xl">|</span>
               <p>
                 <strong>Email:</strong>{" "}
-                <a href="" className="font-light">
+                <a href="" className="font-light hover:text-[#ec1d23]">
                   sales@charteredhousing.com
                 </a>
               </p>
