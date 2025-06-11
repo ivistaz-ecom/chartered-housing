@@ -81,7 +81,7 @@ function NavbarMenu() {
             asChild
             className={`${navigationMenuTriggerStyle()} py-7! text-black font-light text-base bg-transparent! hover:bg-[#ec1d23]! hover:text-white! rounded-none`}
           >
-            <Link href="/chartered-interior">Chartered Interior</Link>
+            <Link href="/chartered-interiors">Chartered Interiors</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
@@ -117,27 +117,31 @@ function NavbarMenu() {
 
 const Header = () => {
   return (
-    <div className="fixed top-0 left-0 right-0">
+    <div className="fixed top-0 left-0 right-0 bg-white">
       {/* CTA Buttons */}
       <div className="max-w-7xl mx-auto flex justify-end items-center gap-5 py-5">
-        <Button
-          variant="outline"
-          className="border-[#ec1d23] rounded-none px-4 py-1.5 font-light text-[#ec1d23] hover:bg-[#ec1d23] hover:text-white cursor-pointer"
-        >
-          Upcoming Projects
-        </Button>
-        <Button
-          variant="outline"
-          className="border-[#ec1d23] rounded-none px-4 py-1.5 font-light text-[#ec1d23] hover:bg-[#ec1d23] hover:text-white cursor-pointer"
-        >
-          Partner with Us
-        </Button>
+        <Link href="/projects/upcoming">
+          <Button
+            variant="outline"
+            className="border-[#ec1d23] rounded-none px-4 py-1.5 font-light text-[#ec1d23] hover:bg-[#ec1d23] hover:text-white cursor-pointer"
+          >
+            Upcoming Projects
+          </Button>
+        </Link>
+        <Link href="/partner-with-us">
+          <Button
+            variant="outline"
+            className="border-[#ec1d23] rounded-none px-4 py-1.5 font-light text-[#ec1d23] hover:bg-[#ec1d23] hover:text-white cursor-pointer"
+          >
+            Partner with Us
+          </Button>
+        </Link>
       </div>
 
       {/* Navbar */}
-      <nav className="bg-[#DBDBDB]/30 backdrop-blur-md z-10">
+      <nav className="bg-[#f5f5f5] z-10">
         <div className="max-w-7xl mx-auto flex justify-end relative">
-          <div className="absolute left-0 -top-7">
+          <Link href="/" className="absolute left-0 -top-7">
             <Image
               src="/logo.png"
               width={65}
@@ -145,7 +149,7 @@ const Header = () => {
               alt="Chartered Housing"
               className=""
             />
-          </div>
+          </Link>
 
           <div className="mr-8">
             <NavbarMenu />

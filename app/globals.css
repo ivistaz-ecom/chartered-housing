@@ -137,3 +137,7 @@ body {
 .font-playfair {
   font-family: "Playfair Display", serif;
 }
+
+.header-bg-color {
+  background: #f0f0f0;
+}
