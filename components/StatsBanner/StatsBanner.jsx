@@ -33,10 +33,7 @@ const StatsBanner = () => {
             <span className="text-4xl">
               {item.data}+ {item.suffix}
             </span>
-            <p
-              className="font-light"
-              dangerouslySetInnerHTML={{ __html: item.desc }}
-            ></p>
+            <p className="" dangerouslySetInnerHTML={{ __html: item.desc }}></p>
           </div>
         ))}
       </div>

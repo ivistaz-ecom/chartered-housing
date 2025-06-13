@@ -41,7 +41,7 @@ const HeroSection = ({ data }) => {
 
       {/* Description */}
       <div className={`${data.desc ? "mt-8" : ""} max-w-7xl mx-auto`}>
-        <p className="text-lg font-light">{data.desc}</p>
+        <p className="text-lg">{data.desc}</p>
       </div>
     </div>
   )

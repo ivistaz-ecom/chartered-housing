@@ -29,20 +29,20 @@ const BecauseAtChartered = () => {
           {/* Thoughts */}
           <div className="max-w-5xl mx-auto grid grid-cols-2 divide-x gap-5">
             <div className="px-4 flex items-center justify-center">
-              <p className="text-white text-2xl text-center font-light">
+              <p className="text-white text-2xl text-center">
                 तत्स्मात् यद्यत् पुरुषः मनसा अभिगच्छति | <br /> तद्वाचा वदति तत्
                 कर्मणा आचरति ||
               </p>
             </div>
             <div className="px-4 flex items-center justify-center">
-              <p className="text-white text-2xl text-center font-light">
+              <p className="text-white text-2xl text-center">
                 “What man conceives in his mind, <br /> that he expresses
                 through speech, <br /> and that he does by deed.”
               </p>
             </div>
           </div>
 
-          <p className="text-white text-lg text-center font-light">
+          <p className="text-white text-lg text-center">
             — Taittiriya Aranyaka
           </p>
         </div>

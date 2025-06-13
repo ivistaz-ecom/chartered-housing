@@ -13,9 +13,7 @@ const Completed = () => {
               <p className="text-lg text-[#646464] font-bold">
                 {project.project}
               </p>
-              <p className="text-lg text-[#646464] font-light">
-                {project.location}
-              </p>
+              <p className="text-lg text-[#646464]">{project.location}</p>
             </div>
           </div>
         ))}

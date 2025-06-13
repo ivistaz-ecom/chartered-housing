@@ -1,5 +1,7 @@
+import AwardsAndRecognitions from "@/components/About/AwardsAndRecognitions"
 import BecauseAtChartered from "@/components/About/BecauseAtChartered"
 import ButOurStory from "@/components/About/ButOurStory"
+import WeSetOut from "@/components/About/WeSetOut"
 import HeroSection from "@/components/HeroSection/HeroSection"
 
 export default function page() {
@@ -17,8 +19,10 @@ export default function page() {
   return (
     <>
       <HeroSection data={heroSectionData} />
+      <WeSetOut />
       <ButOurStory />
       <BecauseAtChartered />
+      <AwardsAndRecognitions />
     </>
   )
 }

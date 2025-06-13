@@ -5,7 +5,7 @@ const ButOurStory = () => {
   return (
     <div className="px-4 mt-10">
       <div className="max-w-7xl mx-auto flex flex-col gap-7">
-        <h2 className="text-[#646464] text-4xl font-playfair text-center font-light">
+        <h2 className="text-[#646464] text-4xl font-playfair text-center">
           But our story is not just about buildings <br />{" "}
           <span className="font-bold">— it’s about people.</span>
         </h2>
@@ -20,7 +20,7 @@ const ButOurStory = () => {
           ))}
         </div>
 
-        <div className="max-w-5xl mx-auto text-lg text-center text-[#646464] font-light space-y-5">
+        <div className="max-w-5xl mx-auto text-lg text-center text-[#646464] space-y-5">
           <p>
             We take that trust seriously. And we continue to honour it — not
             just with quality construction, but with ethical operations, clear
