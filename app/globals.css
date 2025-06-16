@@ -190,3 +190,7 @@ body {
 .header-bg-color {
   background: #f0f0f0;
 }
+
+.text-red {
+  color: #ec1d23;
+}

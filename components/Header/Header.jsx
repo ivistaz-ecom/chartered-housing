@@ -203,7 +203,7 @@ const Header = () => {
       </div>
 
       {/* Navbar */}
-      <nav className="bg-[#f5f5f5] z-10">
+      <nav className="bg-[#DBDBDB4D] z-10">
         <div className="max-w-7xl mx-auto flex justify-end relative">
           <Link href="/" className="absolute left-0 -top-7">
             <Image
