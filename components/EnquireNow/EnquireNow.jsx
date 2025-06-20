@@ -31,11 +31,12 @@ const EnquireNow = () => {
             Enquire Now
           </button>
         </SheetTrigger>
-        <SheetContent className="max-h-[600px] overflow-y-auto my-auto">
+        <SheetContent className="max-h-[540px] overflow-y-auto my-auto">
           <SheetHeader>
-            <SheetDescription className="font-playfair text-3xl text-[#646464]">
+            <SheetTitle className="font-playfair text-3xl text-[#646464] !font-normal">
               Chartered Housing Project
-            </SheetDescription>
+            </SheetTitle>
+
             <SheetDescription className="text-[#646464] text-lg">
               Find your dream home today with our expert assistance.
             </SheetDescription>
@@ -87,14 +88,14 @@ const EnquireNow = () => {
               >
                 Submit
               </Button>
-              <SheetClose asChild>
+              {/* <SheetClose asChild>
                 <Button
                   variant="outline"
                   className="rounded-none border-[#ec1d23] cursor-pointer"
                 >
                   Close
                 </Button>
-              </SheetClose>
+              </SheetClose> */}
             </SheetFooter>
           </form>
         </SheetContent>

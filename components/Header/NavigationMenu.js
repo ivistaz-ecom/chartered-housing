@@ -147,6 +147,15 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+        {/* Chartered Interior */}
+        {/* <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className={`${navigationMenuTriggerStyle()} py-7! text-black text-base bg-transparent! hover:bg-[#ec1d23]! hover:text-white! rounded-none`}
+            >
+              <Link href="/chartered-interiors">Chartered Interiors</Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem> */}
 
         <NavigationMenuItem>
           <NavigationMenuTrigger>Simple</NavigationMenuTrigger>
