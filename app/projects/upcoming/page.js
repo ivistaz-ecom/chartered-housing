@@ -1,21 +1,24 @@
 import HeroSection from "@/components/HeroSection/HeroSection"
+import ProjectsListingPage from "@/components/Projects/ProjectsListingPage"
+import { upcomingProjects } from "@/lib/constants/projects"
 import React from "react"
 
 export default function page() {
   const heroSectionData = {
     heading: {
-      year: 35,
-      firstLine: "Years of Building a Legacy of",
-      secondLine: "Quality through Transparency",
+      year: "",
+      firstLine: "Shaping the Future,",
+      secondLine: "One Landmark at a Time",
       thirdLine: "",
     },
-    imageUrl: "/banner/home-banner.png",
-    desc: "For over thirty five years, we’ve been building more than just homes; we’ve been creating a legacy of quality and trust. Our journey has been one of commitment to excellence and being open with our customers every step of the way.",
+    imageUrl: "/banner/upcoming-banner.png",
+    desc: "Our upcoming projects are a continuation of the values we’ve built over decades — transparency, precision, and timeless design. Explore what’s on the horizon as we expand our footprint with thoughtfully planned developments in Bengaluru’s most promising corridors.",
   }
 
   return (
     <>
       <HeroSection data={heroSectionData} />
+      <ProjectsListingPage projectsList={upcomingProjects} />
     </>
   )
 }

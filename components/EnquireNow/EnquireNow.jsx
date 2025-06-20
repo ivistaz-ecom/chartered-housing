@@ -13,14 +13,16 @@ import {
 } from "@/components/ui/sheet"
 
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+  CheckboxField,
+  PhoneInputField,
+  SelectField,
+  TextInputField,
+} from "../Form/FormField"
+import { useFormHandler } from "@/hooks/useFormHandler"
 
 const EnquireNow = () => {
+  const { formData, handleChange, handleSelectChange, handleSubmit } =
+    useFormHandler()
   return (
     <div className="fixed bottom-1/4 -right-14 -rotate-90">
       <Sheet>
@@ -29,55 +31,72 @@ const EnquireNow = () => {
             Enquire Now
           </button>
         </SheetTrigger>
-        <SheetContent className="max-h-[500px] overflow-y-auto mt-[75px] border-y border-red-500">
+        <SheetContent className="max-h-[600px] overflow-y-auto my-auto">
           <SheetHeader>
-            <SheetTitle>Chartered Housing Project</SheetTitle>
-            <SheetDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
+            <SheetDescription className="font-playfair text-3xl text-[#646464]">
+              Chartered Housing Project
+            </SheetDescription>
+            <SheetDescription className="text-[#646464] text-lg">
+              Find your dream home today with our expert assistance.
             </SheetDescription>
           </SheetHeader>
-
-          {/* Select Projects */}
-          <div className="px-4">
-            <Select>
-              <SelectTrigger className="w-full rounded-none">
-                <SelectValue placeholder="Choose Project" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="light">Light</SelectItem>
-                <SelectItem value="dark">Dark</SelectItem>
-                <SelectItem value="system">System</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-
-          <div className="grid flex-1 auto-rows-min gap-6 px-4">
-            <div className="grid gap-3">
-              <label htmlFor="sheet-demo-name">Name</label>
-              <input id="sheet-demo-name" defaultValue="Pedro Duarte" />
+          <form onSubmit={handleSubmit}>
+            <div className="grid flex-1 auto-rows-min gap-8 px-4">
+              <div className="grid gap-3">
+                <SelectField
+                  value={formData.purpose}
+                  onChange={handleSelectChange}
+                  fontSize="text-base"
+                />
+              </div>
+              <div className="grid gap-3">
+                <TextInputField
+                  placeholder="Your Name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="grid gap-3">
+                <PhoneInputField
+                  value={formData.mobile}
+                  onChange={(val) => handleSelectChange("mobile", val)}
+                />
+              </div>
+              <div className="grid gap-3">
+                <TextInputField
+                  type="email"
+                  placeholder="Your Email Address"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="grid gap-3">
+                <CheckboxField
+                  id="enquireNowForm"
+                  checked={formData.consent}
+                  onChange={handleSelectChange}
+                />
+              </div>
             </div>
-            <div className="grid gap-3">
-              <label htmlFor="sheet-demo-username">Username</label>
-              <input id="sheet-demo-username" defaultValue="@peduarte" />
-            </div>
-          </div>
-          <SheetFooter>
-            <Button
-              type="submit"
-              className="rounded-none bg-[#ec1d23] text-white hover:bg-[#ec1d23] cursor-pointer"
-            >
-              Save changes
-            </Button>
-            <SheetClose asChild>
+            <SheetFooter>
               <Button
-                variant="outline"
-                className="rounded-none border-[#ec1d23] cursor-pointer"
+                type="submit"
+                className="rounded-none bg-[#ec1d23] text-white hover:bg-[#ec1d23] cursor-pointer"
               >
-                Close
+                Submit
               </Button>
-            </SheetClose>
-          </SheetFooter>
+              <SheetClose asChild>
+                <Button
+                  variant="outline"
+                  className="rounded-none border-[#ec1d23] cursor-pointer"
+                >
+                  Close
+                </Button>
+              </SheetClose>
+            </SheetFooter>
+          </form>
         </SheetContent>
       </Sheet>
     </div>

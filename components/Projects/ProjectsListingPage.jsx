@@ -1,15 +1,14 @@
 import { Button } from "@/components/ui/button"
-import { ongoingProjects } from "@/lib/constants/ongoingProjects"
 import Link from "next/link"
 
-const Ongoing = () => {
+const ProjectsListingPage = ({ projectsList }) => {
   return (
     <div className="my-10">
       <div className="max-w-7xl mx-auto space-y-10">
-        {ongoingProjects.map((project, i) => (
+        {projectsList.map((project, i) => (
           <div className="max-w-7xl mx-auto" key={i}>
             <h2
-              className="text-8xl text-[#646464] font-playfair mb-10"
+              className="text-[80px] leading-none text-[#646464] font-playfair mb-10"
               dangerouslySetInnerHTML={{ __html: project.title }}
             ></h2>
             <div className="flex justify-end">
@@ -38,4 +37,4 @@ const Ongoing = () => {
   )
 }
 
-export default Ongoing
+export default ProjectsListingPage

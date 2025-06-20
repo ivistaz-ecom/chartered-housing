@@ -111,9 +111,12 @@ const Footer = () => {
               Terms of Use
             </button>
             <span className="text-2xl font-extralight">|</span>
-            <button className=" hover:underline underline-offset-2 cursor-pointer">
+            <Link
+              href="/privacy-policy"
+              className=" hover:underline underline-offset-2 cursor-pointer"
+            >
               Privacy Policy
-            </button>
+            </Link>
           </div>
         </div>
       </div>

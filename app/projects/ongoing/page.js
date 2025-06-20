@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection/HeroSection"
-import Ongoing from "@/components/Projects/Ongoing/Ongoing"
+import ProjectsListingPage from "@/components/Projects/ProjectsListingPage"
+import { ongoingProjects } from "@/lib/constants/projects"
 import React from "react"
 
 export default function page() {
@@ -17,7 +18,7 @@ export default function page() {
   return (
     <>
       <HeroSection data={heroSectionData} />
-      <Ongoing />
+      <ProjectsListingPage projectsList={ongoingProjects} />
     </>
   )
 }

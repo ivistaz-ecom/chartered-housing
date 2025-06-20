@@ -17,11 +17,15 @@ const HeroSection = ({ data }) => {
           </span>
           <p className="text-4xl text-[#646464] leading-tight">
             {data.heading.firstLine} <br />{" "}
-            <span className="text-[#646464] font-extrabold text-[40px]">
+            <span
+              className={`${
+                data.heading.thirdLine.length > 0 ? "" : "font-bold"
+              } text-[#646464] text-[40px]`}
+            >
               {data.heading.secondLine}
             </span>{" "}
             <br />{" "}
-            <span className="text-[#646464] font-extrabold text-[40px]">
+            <span className="text-[#646464] font-bold text-[40px]">
               {data.heading.thirdLine}
             </span>
           </p>

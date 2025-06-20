@@ -1,3 +1,5 @@
+import SendUsYourQueryForm from "./SendUsYourQueryForm"
+
 const SendUsYourQuery = () => {
   return (
     <div className="px-4 mt-10">
@@ -29,7 +31,7 @@ const SendUsYourQuery = () => {
           </p>
         </div>
 
-        <div className="w-[777px] h-[508px] border border-[#ED1C25]"></div>
+        <SendUsYourQueryForm />
       </div>
     </div>
   )
