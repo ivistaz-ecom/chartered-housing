@@ -5,7 +5,7 @@ import NavbarMenu from "./NavbarMenu"
 
 const Header = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 bg-white">
+    <div className="fixed top-0 left-0 right-0 bg-white z-20">
       {/* Top CTA Buttons */}
       <div className="max-w-7xl mx-auto flex justify-end items-center gap-5 py-5">
         <Link href="/projects/upcoming">

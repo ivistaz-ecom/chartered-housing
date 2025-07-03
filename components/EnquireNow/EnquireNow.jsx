@@ -27,9 +27,9 @@ const EnquireNow = () => {
     <div className="fixed bottom-1/4 -right-14 -rotate-90">
       <Sheet>
         <SheetTrigger>
-          <button className="bg-[#ec1d23] px-7 pb-5 pt-2.5 text-white text-xl rounded-t-xl cursor-pointer">
+          <Button className="bg-[#ec1d23] p-7 text-white text-xl rounded-none rounded-t-xl hover:bg-[#ec1d23] cursor-pointer">
             Enquire Now
-          </button>
+          </Button>
         </SheetTrigger>
         <SheetContent className="max-h-[540px] overflow-y-auto my-auto">
           <SheetHeader>

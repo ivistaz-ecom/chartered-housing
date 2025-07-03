@@ -1,5 +1,7 @@
+//import BangaloreMap from "@/components/BangaloreMap/BangaloreMap"
 import HeroSection from "@/components/HeroSection/HeroSection"
-import StatsBanner from "@/components/StatsBanner/StatsBanner"
+import Projects from "@/components/HomePage/Projects/Projects"
+import StatsBanner from "@/components/HomePage/StatsBanner/StatsBanner"
 
 export default function Home() {
   const heroSectionData = {
@@ -16,7 +18,9 @@ export default function Home() {
   return (
     <>
       <HeroSection data={heroSectionData} />
+      <Projects />
       <StatsBanner />
+      {/* <BangaloreMap /> */}
     </>
   )
 }
