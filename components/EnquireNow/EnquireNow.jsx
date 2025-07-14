@@ -24,10 +24,10 @@ const EnquireNow = () => {
   const { formData, handleChange, handleSelectChange, handleSubmit } =
     useFormHandler()
   return (
-    <div className="fixed bottom-1/4 -right-14 -rotate-90">
+    <div className="fixed bottom-1/4 -right-16 -rotate-90">
       <Sheet>
         <SheetTrigger>
-          <Button className="bg-[#ec1d23] p-7 text-white text-xl rounded-none rounded-t-xl hover:bg-[#ec1d23] cursor-pointer">
+          <Button className="bg-[#ec1d23] p-8 text-white text-xl rounded-none rounded-t-xl hover:bg-[#ec1d23] cursor-pointer">
             Enquire Now
           </Button>
         </SheetTrigger>

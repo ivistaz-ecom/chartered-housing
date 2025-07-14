@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection/HeroSection"
 import Completed from "@/components/Projects/Completed/Completed"
+import OurLocations from "@/components/Projects/Completed/OurLocations"
 import React from "react"
 
 export default function page() {
@@ -18,6 +19,7 @@ export default function page() {
     <>
       <HeroSection data={heroSectionData} />
       <Completed />
+      <OurLocations />
     </>
   )
 }

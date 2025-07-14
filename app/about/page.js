@@ -1,7 +1,7 @@
 import AwardsAndRecognitions from "@/components/About/AwardsAndRecognitions"
 import BecauseAtChartered from "@/components/About/BecauseAtChartered"
 import ButOurStory from "@/components/About/ButOurStory"
-import WeSetOut from "@/components/About/WeSetOut"
+import QualityThroughTransparency from "@/components/About/QualityThroughTransparency"
 import HeroSection from "@/components/HeroSection/HeroSection"
 
 export default function page() {
@@ -19,7 +19,30 @@ export default function page() {
   return (
     <>
       <HeroSection data={heroSectionData} />
-      <WeSetOut />
+      <div className="max-w-7xl mx-auto text-lg space-y-4 mt-4">
+        <p>
+          The Chartered Group was established in 1983 with finance, hire
+          purchase, and leasing as its core business. Chartered Leasing was one
+          of the first leasing companies to be registered as an NBFC by the RBI
+          as early as 1985.
+        </p>
+        <p>
+          We entered the residential apartment development space in 1989. Our
+          first project, Chartered Resorts, was a trendsetter — breaking away
+          from the prevalent matchbox concept to introduce aesthetic residential
+          complexes. Starting with boutique complexes, we gradually expanded to
+          building skyscrapers, commercial complexes, and plotted developments.
+          Yet, our core passion — an eye for detail and the drive to build every
+          apartment as “our own home” — has remained unchanged. It’s this
+          commitment that has helped us carve out a unique niche in the
+          competitive Bangalore market.
+        </p>
+        <p>
+          Over time, we have also expanded our portfolio to include interiors,
+          facilities management, and premium construction.
+        </p>
+      </div>
+      <QualityThroughTransparency />
       <ButOurStory />
       <BecauseAtChartered />
       <AwardsAndRecognitions />

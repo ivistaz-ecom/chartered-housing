@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const HeroSection = ({ data }) => {
   return (
-    <div className="pt-20">
+    <div className="pt-28">
       {/* Main Heading */}
       <div
         className={`${
@@ -11,21 +11,21 @@ const HeroSection = ({ data }) => {
             : "mt-16 max-w-6xl"
         }  mx-auto `}
       >
-        <div className="flex justify-end items-end gap-10 font-playfair">
-          <span className="text-9xl text-[#646464]/50 h-32">
+        <div className="flex justify-end items-center gap-10">
+          <span className="text-9xl text-[#646464]/50 h-32 font-bold">
             {data.heading.year}
           </span>
-          <p className="text-4xl text-[#646464] leading-tight">
+          <p className="text-4xl text-primary-gray leading-tight">
             {data.heading.firstLine} <br />{" "}
             <span
               className={`${
                 data.heading.thirdLine.length > 0 ? "" : "font-bold"
-              } text-[#646464] text-[40px]`}
+              } text-primary-gray text-[40px]`}
             >
               {data.heading.secondLine}
             </span>{" "}
             <br />{" "}
-            <span className="text-[#646464] font-bold text-[40px]">
+            <span className="text-primary-gray font-bold text-[40px]">
               {data.heading.thirdLine}
             </span>
           </p>

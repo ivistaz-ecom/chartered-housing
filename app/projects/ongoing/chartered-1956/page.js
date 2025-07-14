@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection/HeroSection"
 import Amenities from "@/components/Projects/Ongoing/Chartered1956/Amenities"
 import Description from "@/components/Projects/Ongoing/Chartered1956/Description"
+import InterestedIn from "@/components/Projects/Ongoing/Chartered1956/InterestedIn"
 import ProjectDetails from "@/components/Projects/Ongoing/Chartered1956/ProjectDetails"
 import WhyChooseChartered from "@/components/Projects/Ongoing/Chartered1956/WhyChooseChartered"
 
@@ -23,6 +24,7 @@ export default function page() {
       <ProjectDetails />
       <Amenities />
       <WhyChooseChartered />
+      <InterestedIn />
     </>
   )
 }

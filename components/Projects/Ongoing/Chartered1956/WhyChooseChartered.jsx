@@ -15,13 +15,15 @@ const WhyChooseChartered = () => {
           {/* column 1 */}
           <ul className="flex flex-col gap-5 list-disc marker:text-[#ED1C25] text-lg text-[#646464]">
             {whyChooseCharteredCol1.map((point, i) => (
-              <li>{point}</li>
+              <li key={i}>{point}</li>
             ))}
           </ul>
           {/* column 2 */}
           <ul className="flex flex-col gap-5 list-disc marker:text-[#ED1C25] text-lg text-[#646464]">
             {whyChooseCharteredCol1.map((point, i) => (
-              <li className="">{point}</li>
+              <li key={i} className="">
+                {point}
+              </li>
             ))}
           </ul>
         </div>

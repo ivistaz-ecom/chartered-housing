@@ -1,9 +1,13 @@
 import Image from "next/image"
 import React from "react"
 
-const WeSetOut = () => {
+const QualityThroughTransparency = () => {
   return (
     <div className="mt-10">
+      <div className="space-y-3 text-center px-3 text-primary-red mb-12">
+        <h3 className="text-4xl">Since 1989</h3>
+        <h3 className="text-7xl">Quality through Transparency</h3>
+      </div>
       <div className="max-w-7xl mx-auto flex items-center relative -z-10">
         <Image
           src="/about/we-set-out.png"
@@ -13,10 +17,10 @@ const WeSetOut = () => {
           className="w-[650px] h-[500px]"
         />
         <div className="absolute w-4/6 right-0 bg-white p-12 flex flex-col gap-5">
-          <h2 className="font-playfair text-[#ED1C25] text-4xl">
-            We didn’t set out to be the biggest. <br /> We set out to build
-            right.
-          </h2>
+          <div className="text-[#646464] text-4xl space-y-2">
+            <h2>We didn’t set out to be the biggest.</h2>
+            <h2>We set out to build right.</h2>
+          </div>
           <p className="text-lg text-[#646464] text-justify">
             Our first projects were guided by a simple principle: build homes
             that make sense — to live in, to grow in, and to be proud of. Over
@@ -36,4 +40,4 @@ const WeSetOut = () => {
   )
 }
 
-export default WeSetOut
+export default QualityThroughTransparency
