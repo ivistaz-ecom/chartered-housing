@@ -184,8 +184,8 @@ const pinLocations = [
   {
     top: 1030,
     left: 575,
-    title: "Chartered Grasshopper 1",
-    content: "Koramangala Extension, Bangalore",
+    title: "Chartered Samskruti",
+    content: "Bilikahalli, Bangalore",
     location: "https://maps.app.goo.gl/example4",
   },
   {
@@ -208,7 +208,7 @@ const OurLocations = () => {
       <div className="mx-auto py-10 px-4 md:px-10 mt-7">
         <div className="relative w-full max-w-7xl mx-auto">
           <Image
-            src="/projects/completed/map.svg"
+            src="/projects/completed/map-new.svg"
             alt="Map"
             width={1000}
             height={600}

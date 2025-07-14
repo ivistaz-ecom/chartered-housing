@@ -29,7 +29,7 @@ const Header = () => {
       {/* Navbar */}
       <nav className="bg-[#DBDBDB4D] z-10">
         <div className="max-w-7xl mx-auto flex justify-end relative">
-          <Link href="/" className="absolute left-0 -top-7">
+          <Link href="/" className="absolute left-0 bottom-0">
             <Image
               src="/logo.png"
               width={65}
