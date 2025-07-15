@@ -5,6 +5,7 @@ import React from "react"
 
 export default function page() {
   const heroSectionData = {
+    page: "completed projects",
     heading: {
       year: "",
       firstLine: "Remembered for generations.",

@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection/HeroSection"
 
 export default function page() {
   const heroSectionData = {
+    page: "chartered birdsong",
     heading: {
       year: "",
       firstLine: "Crafted Spaces,",

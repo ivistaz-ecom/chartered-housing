@@ -3,6 +3,7 @@ import React from "react"
 
 export default function page() {
   const heroSectionData = {
+    page: "Careers",
     heading: {
       year: 35,
       firstLine: "Years of Building a Legacy of",

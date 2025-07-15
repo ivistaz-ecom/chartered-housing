@@ -4,6 +4,7 @@ import React from "react"
 
 export default function page() {
   const heroSectionData = {
+    page: "why chartered",
     heading: {
       year: "",
       firstLine: "A Legacy of Trust",

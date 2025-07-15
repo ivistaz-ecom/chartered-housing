@@ -11,18 +11,12 @@ const Projects = () => {
       </h2>
       <div className="max-w-6xl mx-auto flex flex-col gap-10">
         {projects.map((item, i) => (
-          <div key={i} className="grid grid-cols-2 gap-10">
-            {/* category */}
-            {/* <div
-              className={`writing-vertical-lr order-${i % 2 === 0 ? "0" : "3"}`}
-            >
-              <h2 className="text-4xl text-[#646464] font-playfair">
-                {item.category}
-              </h2>
-            </div> */}
-
-            {/* Project Image */}
-            <div className={`order-${i % 2 === 0 ? "0" : "1"} mx-10`}>
+          <div
+            key={i}
+            className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+          >
+            {/* Image */}
+            <div className={`mx-10 ${i % 2 === 0 ? "order-1" : "order-2"}`}>
               <Image
                 src={item.imageUrl}
                 width={400}
@@ -32,7 +26,11 @@ const Projects = () => {
             </div>
 
             {/* Description */}
-            <div className={`flex flex-col gap-5 my-auto`}>
+            <div
+              className={`flex flex-col gap-5 my-auto ${
+                i % 2 === 0 ? "order-2" : "order-1"
+              }`}
+            >
               <div className="font-playfair">
                 <h3 className="text-4xl text-[#646464] uppercase tracking-widest font-bold">
                   {item.firstname}

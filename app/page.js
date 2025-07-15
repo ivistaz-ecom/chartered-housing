@@ -5,6 +5,7 @@ import StatsBanner from "@/components/HomePage/StatsBanner/StatsBanner"
 
 export default function Home() {
   const heroSectionData = {
+    page: "Home",
     heading: {
       year: 35,
       firstLine: "Years of Building a Legacy of",

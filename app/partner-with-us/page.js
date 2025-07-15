@@ -6,6 +6,7 @@ import React from "react"
 
 export default function page() {
   const heroSectionData = {
+    page: "partner with us",
     heading: {
       year: "",
       firstLine: "Let’s Build",

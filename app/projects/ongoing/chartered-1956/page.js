@@ -7,6 +7,7 @@ import WhyChooseChartered from "@/components/Projects/Ongoing/Chartered1956/WhyC
 
 export default function page() {
   const heroSectionData = {
+    page: "Chartered 1956",
     heading: {
       year: "",
       firstLine: "A timeless residence where",

@@ -6,29 +6,38 @@ const HeroSection = ({ data }) => {
       {/* Main Heading */}
       <div
         className={`${
-          data.heading.thirdLine.length > 0
-            ? "mt-20 max-w-7xl"
-            : "mt-16 max-w-6xl"
-        }  mx-auto `}
+          data.heading.thirdLine.length > 0 ? "mt-20" : "mt-16"
+        } max-w-7xl mx-auto `}
       >
-        <div className="flex justify-end items-center gap-10">
-          <span className="text-9xl text-[#646464]/50 h-32 font-bold">
-            {data.heading.year}
-          </span>
-          <p className="text-4xl text-primary-gray leading-tight">
-            {data.heading.firstLine} <br />{" "}
-            <span
-              className={`${
-                data.heading.thirdLine.length > 0 ? "" : "font-bold"
-              } text-primary-gray text-[40px]`}
-            >
-              {data.heading.secondLine}
-            </span>{" "}
-            <br />{" "}
-            <span className="text-primary-gray font-bold text-[40px]">
-              {data.heading.thirdLine}
+        <div
+          className={`${
+            data.page === "Home" ? "justify-end" : "justify-between"
+          } flex items-center`}
+        >
+          {data.page !== "Home" && (
+            <p className="text-[#64646480] text-4xl font-bold uppercase">
+              {data.page}
+            </p>
+          )}
+          <div className="flex gap-10 items-center">
+            <span className="text-8xl text-[#64646480] font-bold">
+              {data.heading.year}
             </span>
-          </p>
+            <p className="text-4xl text-primary-gray leading-tight">
+              {data.heading.firstLine} <br />{" "}
+              <span
+                className={`${
+                  data.heading.thirdLine.length > 0 ? "" : "font-bold"
+                } text-primary-gray text-[40px]`}
+              >
+                {data.heading.secondLine}
+              </span>{" "}
+              <br />{" "}
+              <span className="text-primary-gray font-bold text-[40px]">
+                {data.heading.thirdLine}
+              </span>
+            </p>
+          </div>
         </div>
       </div>
 

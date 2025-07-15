@@ -5,6 +5,7 @@ import React from "react"
 
 export default function page() {
   const heroSectionData = {
+    page: "Contact Us",
     heading: {
       year: "",
       firstLine: "Looking for your next home or a",

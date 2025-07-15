@@ -6,6 +6,7 @@ import HeroSection from "@/components/HeroSection/HeroSection"
 
 export default function page() {
   const heroSectionData = {
+    page: "About Us",
     heading: {
       year: "",
       firstLine: "A Legacy of Trust",
