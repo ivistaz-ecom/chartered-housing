@@ -31,14 +31,20 @@ const Projects = () => {
                 i % 2 === 0 ? "order-2" : "order-1"
               }`}
             >
-              <div className="font-playfair">
-                <h3 className="text-4xl text-[#646464] uppercase tracking-widest font-bold">
+              <div>
+                {/* <h3 className="text-4xl text-[#646464] uppercase tracking-widest font-bold">
                   {item.firstname}
                 </h3>
-                <h3 className="text-9xl text-[#ED1C24]">{item.lastname}</h3>
+                <h3 className="text-9xl text-[#ED1C24]">{item.lastname}</h3> */}
+                <Image
+                  src={item.logo}
+                  width={item.logoWidth}
+                  height={item.logoHeight}
+                  alt={item.firstname + " " + item.lastname}
+                />
               </div>
 
-              <h4 className="text-4xl text-[#646464] mt-10">{item.title}</h4>
+              <h4 className="text-4xl text-[#646464] mt-1">{item.title}</h4>
               <p className="text-lg text-[#646464]">{item.desc}</p>
               <Link href={item.path}>
                 <Button
