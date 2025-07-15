@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 import Link from "next/link"
 
 const ProjectsListingPage = ({ projectsList }) => {
@@ -15,7 +16,16 @@ const ProjectsListingPage = ({ projectsList }) => {
               <div className="w-[800px] text-lg text-[#646464] flex flex-col gap-5">
                 <p>{project.desc1}</p>
                 <p>{project.desc2}</p>
-                <div className="w-full h-[500px] bg-[#D9D9D9]"></div>
+                <div className="w-full h-[500px]">
+                  <Image
+                    src={project.image}
+                    width={800}
+                    height={500}
+                    alt={project.projectName}
+                    className="w-full"
+                  />
+                </div>
+
                 <h3 className="text-4xl text-[#ED1C24] font-playfair">
                   {project.projectName}
                 </h3>

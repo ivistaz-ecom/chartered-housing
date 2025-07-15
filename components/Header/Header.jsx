@@ -45,7 +45,7 @@ const Header = () => {
 
           <div className="bg-[#ec1d23] w-60 text-white text-center flex items-center justify-center">
             <span>
-              Reach Us: <a href="tel:+918660697659">+91 8660697659</a>
+              Reach Us: <a href="tel:+918031021400">+91 8031021400</a>
             </span>
           </div>
         </div>
