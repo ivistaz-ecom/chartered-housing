@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const AwardsAndRecognitions = () => {
   return (
-    <div className="mt-10 mb-16">
+    <div className="my-10">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-[#ED1C25] text-4xl font-playfair text-center">
           Awards and Recognitions

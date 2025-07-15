@@ -1,13 +1,14 @@
-//import BangaloreMap from "@/components/BangaloreMap/BangaloreMap"
 import HeroSection from "@/components/HeroSection/HeroSection"
 import Projects from "@/components/HomePage/Projects/Projects"
+import Since1989 from "@/components/HomePage/Since1989/Since1989"
 import StatsBanner from "@/components/HomePage/StatsBanner/StatsBanner"
+import Testimonials from "@/components/HomePage/Testimonials/Testimonials"
 
 export default function Home() {
   const heroSectionData = {
     page: "Home",
     heading: {
-      year: 35,
+      year: 36,
       firstLine: "Years of Building a Legacy of",
       secondLine: "Quality through Transparency",
       thirdLine: "",
@@ -21,7 +22,8 @@ export default function Home() {
       <HeroSection data={heroSectionData} />
       <Projects />
       <StatsBanner />
-      {/* <BangaloreMap /> */}
+      <Since1989 />
+      <Testimonials />
     </>
   )
 }

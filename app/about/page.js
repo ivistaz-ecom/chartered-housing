@@ -1,6 +1,7 @@
 import AwardsAndRecognitions from "@/components/About/AwardsAndRecognitions"
 import BecauseAtChartered from "@/components/About/BecauseAtChartered"
 import ButOurStory from "@/components/About/ButOurStory"
+import MoreThanJustRealEstate from "@/components/About/MoreThanJustRealEstate"
 import QualityThroughTransparency from "@/components/About/QualityThroughTransparency"
 import HeroSection from "@/components/HeroSection/HeroSection"
 
@@ -47,6 +48,7 @@ export default function page() {
       <ButOurStory />
       <BecauseAtChartered />
       <AwardsAndRecognitions />
+      <MoreThanJustRealEstate />
     </>
   )
 }

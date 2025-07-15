@@ -30,7 +30,7 @@ const statsData = [
 const StatsBanner = () => {
   return (
     <div className="bg-[url('/banner/stats-banner.png')] bg-cover h-[500px] mt-16 flex items-center justify-center">
-      <div className="grid grid-cols-4 divide-x gap-5">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-4 divide-x gap-5">
         {statsData.map((item, idx) => (
           <div
             key={idx}

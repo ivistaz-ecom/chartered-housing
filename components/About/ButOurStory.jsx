@@ -3,7 +3,7 @@ import React from "react"
 
 const ButOurStory = () => {
   return (
-    <div className="px-4 mt-10">
+    <div className="px-4 mt-16">
       <div className="max-w-7xl mx-auto flex flex-col gap-7">
         <h2 className="text-[#646464] text-4xl font-playfair text-center">
           But our story is not just about buildings <br />{" "}

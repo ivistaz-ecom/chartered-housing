@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const BecauseAtChartered = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-16">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-[#ED1C25] text-4xl font-playfair text-center">
           Because at Chartered Housing, we don’t just build for today. <br />{" "}

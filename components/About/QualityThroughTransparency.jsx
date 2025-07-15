@@ -3,7 +3,7 @@ import React from "react"
 
 const QualityThroughTransparency = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-16">
       <div className="space-y-3 text-center px-3 text-primary-red mb-12">
         <h3 className="text-4xl">Since 1989</h3>
         <h3 className="text-7xl">Quality through Transparency</h3>
