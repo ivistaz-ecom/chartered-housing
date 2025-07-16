@@ -1,35 +1,56 @@
+"use client"
+
 import { testimonials } from "@/lib/constants/Testimonials"
 import Image from "next/image"
+import Slider from "react-slick"
 
 const Testimonials = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  }
+
   return (
-    <div className="mt-32 mb-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-2 gap-10">
+    <div className="mt-16 mb-20 max-w-6xl mx-auto">
+      <Slider {...settings}>
         {testimonials.map((item, i) => (
-          <div
-            key={i}
-            className="border-2 border-primary-red rounded-3xl relative flex flex-col gap-5 pt-24 pb-5 px-12"
-          >
-            {/* Quotes Symbol */}
-            <div className="absolute -top-12 left-10 bg-white pl-1">
-              <Image
-                src="/home/quotes.svg"
-                width={166}
-                height={124}
-                alt="quotes"
-                className=""
-              />
-            </div>
+          <div key={i} className="px-4 pt-14 h-full pb-5">
+            <div className="border-2 border-primary-red rounded-3xl flex flex-col gap-5 pt-20 pb-5 px-12 h-full relative min-h-[375px]">
+              {/* Quotes Symbol */}
+              <div className="absolute -top-12 left-10 bg-white pl-1">
+                <Image
+                  src="/home/quotes.svg"
+                  width={136}
+                  height={100}
+                  alt="quotes"
+                />
+              </div>
 
-            <p className="text-primary-gray text-lg">{item.testimonial}</p>
+              <p className="text-primary-gray flex-grow">{item.testimonial}</p>
 
-            <div className="space-y-2 text-primary-gray mt-auto">
-              <p className="text-2xl">{item.name}</p>
-              <p className="">{item.designation}</p>
+              <div className="space-y-1 text-primary-gray pt-4">
+                <p className="text-lg font-bold">{item.name}</p>
+                <p className="">{item.designation}</p>
+              </div>
             </div>
           </div>
         ))}
-      </div>
+      </Slider>
     </div>
   )
 }
