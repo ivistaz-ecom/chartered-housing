@@ -55,7 +55,7 @@ const playfairDisplay = Playfair_Display({
 // })
 
 const nunito = Nunito({
-  weight: ["400", "700"],
+  weight: ["200", "300", "400", "600", "700", "800", "900"],
   subsets: ["latin"],
   display: "swap",
 })

@@ -3,6 +3,7 @@ import BecauseAtChartered from "@/components/About/BecauseAtChartered"
 import ButOurStory from "@/components/About/ButOurStory"
 import MoreThanJustRealEstate from "@/components/About/MoreThanJustRealEstate"
 import QualityThroughTransparency from "@/components/About/QualityThroughTransparency"
+import VisionaryLeadership from "@/components/About/VisionaryLeadership"
 import HeroSection from "@/components/HeroSection/HeroSection"
 
 export default function page() {
@@ -48,6 +49,7 @@ export default function page() {
       <ButOurStory />
       <BecauseAtChartered />
       <AwardsAndRecognitions />
+      <VisionaryLeadership />
       <MoreThanJustRealEstate />
     </>
   )
