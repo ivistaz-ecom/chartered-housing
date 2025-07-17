@@ -8,12 +8,16 @@ const UpcomingProjects = () => {
       <div className="max-w-7xl mx-auto">
         <ul className="flex flex-col gap-16">
           {upcomingProjects.map((item, i) => (
-            <li key={i} className="flex flex-col gap-5">
-              <h1 className="text-6xl text-primary-red">{item.projectName}</h1>
-              <p className="text-3xl text-primary-gray">{item.location}</p>
-              <div className="border border-primary-red p-5 w-full">
-                <div className="flex justify-between items-center">
-                  <p className="text-primary-gray text-lg font-light">
+            <li key={i} className="flex flex-col gap-8">
+              <div className="space-y-2">
+                <h1 className="text-6xl text-primary-red">
+                  {item.projectName}
+                </h1>
+                <p className="text-3xl text-primary-gray">{item.location}</p>
+              </div>
+              <div className="border border-primary-red py-5 px-10 flex items-center justify-center">
+                <div className="flex justify-between items-center w-full">
+                  <p className="text-primary-gray text-lg font-light w-3/4">
                     {item.desc}
                   </p>
                   <Link href="/contact-us">
