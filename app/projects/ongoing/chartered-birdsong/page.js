@@ -1,21 +1,31 @@
 import HeroSection from "@/components/HeroSection/HeroSection"
+import Amenities from "@/components/Projects/Ongoing/CharteredBirdsong/Amenities"
+import Description from "@/components/Projects/Ongoing/CharteredBirdsong/Description"
+import InterestedIn from "@/components/Projects/Ongoing/CharteredBirdsong/InterestedIn"
+import ProjectDetails from "@/components/Projects/Ongoing/CharteredBirdsong/ProjectDetails"
+import WhyChooseChartered from "@/components/Projects/Ongoing/CharteredBirdsong/WhyChooseChartered"
 
 export default function page() {
   const heroSectionData = {
     page: "chartered birdsong",
     heading: {
       year: "",
-      firstLine: "Crafted Spaces,",
-      secondLine: "Currently Taking Shape",
-      thirdLine: "",
+      firstLine: "Space to dream. Freedom to build.",
+      secondLine: "Discover plotted living crafted for",
+      thirdLine: "future-forward families.",
     },
-    imageUrl: "/banner/ongoing-banner.png",
-    desc: "Explore our curated selection of ongoing projects — each designed with care, built with integrity, and progressing with precision.From thoughtfully planned apartments to premium plotted developments, find a home that’s being built with you in mind.",
+    imageUrl: "/banner/chartered-birdsong-banner.png",
+    desc: "",
   }
 
   return (
     <>
       <HeroSection data={heroSectionData} />
+      <Description />
+      <ProjectDetails />
+      <Amenities />
+      <WhyChooseChartered />
+      <InterestedIn />
     </>
   )
 }

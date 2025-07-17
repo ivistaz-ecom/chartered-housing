@@ -1,4 +1,4 @@
-import { ch1956projectDetails } from "@/lib/constants/projectDetails"
+import { chBirdsongProjectDetails } from "@/lib/constants/projectDetails"
 import Image from "next/image"
 
 const ProjectDetails = () => {
@@ -10,15 +10,15 @@ const ProjectDetails = () => {
         </h3>
         <div className="mt-10 border border-[#ED1C25] p-10">
           <div className="grid grid-cols-4">
-            {ch1956projectDetails.map((item, i) => (
+            {chBirdsongProjectDetails.map((item, i) => (
               <div
                 key={i}
                 className={`flex flex-col gap-3 p-5
               ${i % 4 !== 3 ? "border-r border-[#ED1C25]" : ""} 
               ${
                 i <
-                ch1956projectDetails.length -
-                  (ch1956projectDetails.length % 4 || 4)
+                chBirdsongProjectDetails.length -
+                  (chBirdsongProjectDetails.length % 4 || 4)
                   ? "border-b border-primary-red"
                   : ""
               }`}
@@ -33,7 +33,7 @@ const ProjectDetails = () => {
                 </div>
                 <p
                   dangerouslySetInnerHTML={{ __html: item.title }}
-                  className="text-[#646464]"
+                  className=" text-[#646464]"
                 ></p>
               </div>
             ))}
