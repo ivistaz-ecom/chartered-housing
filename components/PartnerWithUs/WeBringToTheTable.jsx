@@ -9,7 +9,7 @@ const WeBringToTheTable = () => {
     "A loyal customer base and proven market reputation",
   ]
   return (
-    <div className="px-4 mt-10">
+    <div className="px-4 my-16">
       <div className="max-w-7xl mx-auto grid grid-cols-2">
         <div>
           <Image
@@ -36,12 +36,17 @@ const WeBringToTheTable = () => {
           </ul>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto">
-        <p className="text-[#646464] text-lg my-10">
-          Whether you’re looking to unlock land value, co-develop a plotted or
-          apartment community, or explore a long-term JV, we approach every
-          partnership with the same principles we build our homes with —
-          purpose, clarity, and mutual respect.
+      <div className="max-w-7xl mx-auto text-primary-gray text-lg space-y-7 mt-16">
+        <h2 className="text-4xl text-center">Joint Development Expertise</h2>
+        <p>
+          We bring decades of experience in steering complex real estate
+          projects from idea to execution. Our team is skilled at identifying
+          potential-rich land parcels, conducting feasibility studies, and
+          crafting development strategies that maximise shared value.
+        </p>
+        <p>
+          We thrive in collaborative environments, pooling resources and
+          knowledge to deliver win-win outcomes.
         </p>
       </div>
     </div>

@@ -2,7 +2,7 @@ import SendUsYourQueryForm from "./SendUsYourQueryForm"
 
 const SendUsYourQuery = () => {
   return (
-    <div className="px-4 mt-10">
+    <div className="px-4 mt-16">
       <div className="max-w-7xl mx-auto flex gap-5 justify-between">
         <div className="w-[424px] space-y-5 text-[#646464] text-lg text-justify">
           <p className="">
