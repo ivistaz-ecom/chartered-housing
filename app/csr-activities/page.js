@@ -1,22 +1,26 @@
+import CommitmentInAction from "@/components/CsrActivities/CommitmentInAction"
+import PeopleBeforeProfit from "@/components/CsrActivities/PeopleBeforeProfit"
 import HeroSection from "@/components/HeroSection/HeroSection"
 import React from "react"
 
 export default function page() {
   const heroSectionData = {
-    page: "csr activities",
+    page: "Corporate <br /> Social Responsibility",
     heading: {
-      year: 35,
-      firstLine: "Years of Building a Legacy of",
-      secondLine: "Quality through Transparency",
+      year: "",
+      firstLine: "",
+      secondLine: "Building Better Lives",
       thirdLine: "",
     },
-    imageUrl: "/banner/home-banner.png",
-    desc: "For over thirty five years, we’ve been building more than just homes; we’ve been creating a legacy of quality and trust. Our journey has been one of commitment to excellence and being open with our customers every step of the way.",
+    imageUrl: "/banner/csr-banner.png",
+    desc: "At Chartered Housing, we believe real estate is not just about structures - it's about people. From the start, our mission has been clear: put ethics before profits, and impact before image. This commitment extends beyond homes and into communities, the environment, and everyday lives.",
   }
 
   return (
     <>
       <HeroSection data={heroSectionData} />
+      <PeopleBeforeProfit />
+      <CommitmentInAction />
     </>
   )
 }

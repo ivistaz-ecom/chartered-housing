@@ -15,9 +15,10 @@ const HeroSection = ({ data }) => {
           } flex items-center`}
         >
           {data.page !== "Home" && (
-            <p className="text-[#64646480] text-4xl font-bold uppercase">
-              {data.page}
-            </p>
+            <p
+              className="text-[#64646480] text-4xl font-bold uppercase leading-tight"
+              dangerouslySetInnerHTML={{ __html: data.page }}
+            ></p>
           )}
           <div className="flex gap-10 items-center">
             <span className="text-8xl text-[#64646480] font-bold">
